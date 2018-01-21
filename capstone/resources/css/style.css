@@ -1,0 +1,445 @@
+/*Page*/
+
+body {
+    line-height: 1.4;
+    letter-spacing: 1.4;
+    margin: 0;
+}
+html {
+    font-size: 14px;
+}
+
+/*Head*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    font-size: 1.3rem;
+    font-family: "Muli", sans-serif;
+}
+.nav-content, .nav-content ul, .nav-content div {
+    display: flex;
+    align-items: center;
+    
+}
+.nav-content {
+    margin-right: 24px;
+    margin-left: 24px;
+}
+.nav-content ul li {
+    margin-right: 12px;
+}
+#colmar {
+    font-weight: bold
+}
+#academy {
+    color: gray;
+}
+.nav-content img {
+    width: 35px;
+}
+.hidden-bars {
+    display: none;
+}
+@media only screen and (max-width: 560px) {
+    nav {
+        width: 100%; 
+    }
+    .hidden-bars {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+    }
+    #list-content, .nav-content {
+        display: none;
+    }
+    .hidden-bars div {
+        display: flex;
+    }
+}
+
+/*Starting Point*/
+
+#banner {
+    display: flex;
+    font-family: "Ovo", sans-serif;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgray;
+    width: 100%;
+}
+.banner-img img {
+    width: 90%;
+    margin: 32px auto 32px 24px;
+}
+.banner-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 7rem;
+    margin-bottom: 1rem;
+    width: auto;
+}
+#learn {
+    font-size: 30px;
+    color: #413e3e;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+#lorem {
+    font-size: 20px;
+    color: #413e3e;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.banner-button {
+    background-color: #413e3e;
+    color: white;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+@media only screen and (max-width: 560px) {
+    #banner {
+        flex-direction: column;
+        width: 100%;
+    }
+    .banner-img img {
+        margin: 0;
+        width: 100%;
+    }
+    .banner-info {
+        margin: 32px 16px 24px 16px;
+    }
+    #learn {
+        font-size: 50px;
+        margin-bottom: 32px;
+    }
+    #lorem {
+        font-size: 25px;
+        margin-bottom: 32px;
+    }
+    .banner-button {
+        background-color: gray;
+        font-size: 25px;
+    }
+}
+
+/*informations*/
+
+.informations {
+    display: flex;
+    justify-content: center;
+    min-width: 70%;
+    max-width: 90%;
+    margin: 0;
+    font-family: "Muli", sans-serif;
+    margin-bottom: 32px;
+    
+}
+.main-img img {
+    width: 93%;
+    margin: 32px auto 32px 24px;
+}
+.main-detials {
+    margin-left: 24px;
+    margin-bottom: 32px;
+}
+.main-detials #main-title {
+    font-size: 2.5rem;
+    color: gray;
+    font-weight: bold;
+}
+.main-detials p {
+    font-size: 1.1rem;
+    color: grey;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+.main-detials #name {
+    font-size: 1.1rem;
+}
+.detial-content {
+    width: 50%;
+    padding-top: 32px;
+    border-left: 2px solid lightgrey;
+    padding-right: 1.2rem;
+    padding-left: 2rem;
+}
+.detial-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.detial img {
+    width: 35%;
+    height: 35%;
+    padding: 16px;
+}
+.detial {
+    display: flex;
+    border-left: 2px solid lightgrey;
+    border-top: 2px solid lightgrey;
+}
+.readmore {
+    color: deepskyblue;
+    font-size: 1.3rem;
+    padding-top: 0.5rem;
+}
+.title {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+.detial:hover {
+    background-color: lightgrey;
+}
+.mobile-img {
+    display: none;
+}
+@media only screen and (max-width: 560px) {
+    .main-content {
+        display: none;
+    }
+    .detial-content {
+        width: 600px;
+        margin: 0 auto;
+        border: none;
+    }
+    .detial img:first-child {
+        display: none;
+    }
+    .detial img {
+        width: 93%;
+    }
+    .mobile-img {
+        display: block;
+    }
+    .detial {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        padding-bottom: 10px;
+    }
+    .detial-info {
+        text-align: center;
+    }
+    .campus {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .readmore {
+        margin-bottom: 16px;
+    }
+}
+/*courses*/
+.courses-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #e7e9e8;
+}
+.courses-title {
+    font-family: "Muli", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 32px auto 16px auto;
+}
+.courses {
+    display: flex;
+    margin: auto 72px;
+    justify-content: center;
+}
+.cse img {
+    width: 100%;
+    height: auto;
+}
+.cse  {
+    margin: 32px;
+    background-color: white;
+    padding-bottom: 16px;
+    width: 300px;
+}
+.cse div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+}
+.cse-title {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Ovo", sans-serif;
+    color: dimgrey;
+    padding-top: 16px;
+}
+.course {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: dimgray;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.cse-des {
+    font-family: "Muli", sans-serif;
+    color: dimgray;
+}
+.hidden-cse {
+    display: none;
+}
+@media only screen and (max-width: 560px) {
+    .courses {
+        display: none;
+    }
+    .courses-content {
+        background-color: white;
+        border-top: 2px solid gray;
+        margin-bottom: 32px;
+    }
+    .courses-title {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .hidden-cse {
+        display: block;
+    }
+    .hidden-cse div {
+        background-color: lightgray;
+        font-family: "Muli", sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        color: #38433c;
+    }
+    .hidden-cse div {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 16px;
+        margin-top: 8px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+/*thesisexhibit*/
+.thesis-title {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+}
+.thesis-content {
+    display: flex;
+    justify-content: center;
+}
+.thesis-exhibit {
+    font-family: "Muli", sans-serif;
+    padding-bottom: 20px;
+}
+.video-content {
+    width: 750px;
+    font-family: "Muli", sans-serif;
+    margin-left: 24px;
+}
+.video-content video {
+    width: 100%;
+}
+.video-content div span {
+    font-size: 22px;
+    font-weight: bold;
+}
+.video-content div p {
+    font-size: 15px;
+    padding-top: 16px;
+}
+.video-content div {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 16px;
+}
+.des-content {
+    margin-left: 24px;
+}
+.des {
+    display: flex;
+    height: 220px;
+}
+.des img {
+    width: 35%;
+    height: auto;
+    padding: 16px;
+}
+.des div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-family: "Muli", sans-serif;
+    margin-right: 16px;
+}
+.des:hover {
+    background-color: lightgrey;
+}
+.des div span {
+    font-size: 25px;
+    font-weight: bold;
+    color: #38433c;
+}
+.des div p {
+    font-size: 15px;
+}
+.hidden-video {
+    display: none;
+}
+@media only screen and (max-width: 560px) {
+    .thesis-title {
+        border-top: 2px solid gray;
+    }
+    .thesis-content {
+        display: none;
+    }
+    .hidden-video {
+        display: block;
+    }
+    .hidden-video video {
+        width: 100%;
+    }
+    .thesis-exhibit {
+        width: 100%;
+    }
+}
+/*footer*/
+footer {
+    font-family: "Mul", sans-serif;
+    font-size: 18px;
+    border-top: 2px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    height: 95px;
+}
+footer div {
+    padding: 16px;
+}
+footer #copy {
+    padding-left: 24px;
+}
+footer div span {
+    margin-right: 10px;
+}
+@media only screen and (max-width: 560px) {
+    #terms {
+        display: none;
+    }
+    footer {
+        border: none;
+        height: 70px;
+    }
+    #copy {
+        padding: 0;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
